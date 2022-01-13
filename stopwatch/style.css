@@ -1,0 +1,35 @@
+.container{
+    position: relative;
+    width: 400px;
+    padding-left: 45%;
+    padding-top: 80px;
+  }
+.center{
+    background-color: yellow;
+    align-items: center;
+    height: 300px;
+    border: 3px solid green;
+}
+.center h1{
+    font-size: 40px;
+    text-align: center;
+    
+}
+.center p{
+    font-size: 40px;
+    display:relative;
+    margin-left: 140px;
+}
+.center button{
+    font-size: 20px;
+    color: black;
+    background-color: cyan;
+    text-align: center;
+    display: inline;
+    margin-left: 50px;
+}
+.center button:hover{
+    background-color: white;
+    cursor: pointer;
+    opacity: .8;
+}
