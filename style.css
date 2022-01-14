@@ -49,4 +49,6 @@
     font-size: 30px;
     background-color: rgba(37, 199, 172, 0.664);
     padding:20px;
+    display: inline-block;
+    margin-top: 10px;
 }
