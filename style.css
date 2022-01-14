@@ -6,16 +6,19 @@
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-.header {
-    margin-top: 50px;
-    height: 150px;
-    width: 500px;
-    border-radius: 10%;
+.container p{
+    margin: 0;
+    position: absolute;
+    margin-bottom:250px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-size: 40px;
-    margin-left: 700px;
     position: relative;
     text-align: center;
     background-color: rgba(37, 199, 172, 0.664);
+    border-radius: 20%;
+    padding: 20px;
 }
 .container{
     margin: 0;
