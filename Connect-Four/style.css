@@ -1,26 +1,28 @@
 .wrap{
-    text-align: center;
-        margin: auto;
-        width: 50%;
-        border: 3px solid green;
-        padding: 10px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  background-color: lightblue;
 }
 h3{
     font-size: 40px;
 }
+
 .grid {
-    margin-left: 100px;
+    margin: auto;
     height: 600px;
     width: 525px;
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
+    background-color: rgba(40, 153, 6, 0.712);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
   }
-  
+  .center {
+    margin: auto;
+    width: 50%;
+  }
   .grid div {
     margin-top: 12px;
     margin-left: 12px;
@@ -30,6 +32,9 @@ h3{
   .work{
       border-radius: 50%;
       background-color: white;
+  }
+  .grid :hover{
+    background-color: cyan;
   }
   
   .player-one {
@@ -42,5 +47,34 @@ h3{
     border-radius: 50%;
   }
   #main {
-    text-align: center;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
+#main button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 183, 255, 0.657);
+    transition: 0.6s;
+}
+#main a:hover{
+  cursor: pointer;
+  background-color: rgba(0, 183, 255, 0.657);
+  transition: 0.6s;
+}
+#main button{
+  background-color: green;
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  border: white 1px solid;
+  letter-spacing: 2px;
+}
+#main a{
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  font-size: 40px;
+  padding: 10px;
+  border: white 1px solid;
+  letter-spacing: 2px;
 }

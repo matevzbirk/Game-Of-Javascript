@@ -8,9 +8,9 @@
   <script src="javascript.js" charset="utf-8"></script>
 </head>
 <body class="wrap">
-  <h3>The current Player is: Player <span id="current-player">1</span></h3>
+  <h3>Player on turn: Player <span id="current-player">1</span></h3>
   <h3 id="result"></h3>
-
+<div class="center" >
   <div class="grid">
     <div class="work"></div>
     <div class="work"></div>
@@ -62,8 +62,10 @@
     <div class="taken"></div>
     <div class="taken"></div>
   </div>
+</div>
   <div id="main">
-    <a href="/index.html"> DOMOV </a>
+    <button id="reset" onclick="reset()"> RESET </button>
+    <a href="https://matevzbirk.github.io/Game-Of-Javascript/index.html"> DOMOV </a>
   </div>
 </body>
 </html>

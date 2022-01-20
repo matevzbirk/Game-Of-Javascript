@@ -125,5 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
         checkBoard()
       }
     }
-    
   })
+  function reset(){
+    location.reload();
+    squares[i].classList.add('');
+  }
