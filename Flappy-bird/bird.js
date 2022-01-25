@@ -1,11 +1,17 @@
+const CharacterBird = new Image();
+CharacterBird.src = 'bird.png';
+
 class Bird{
     constructor(){
         this.x = 150;
         this.y = 200;
         this.vy = 0;
-        this.width = 20;
-        this.height = 20;
+        this.originalWidth =680;
+        this.originalHeight = 680;
+        this.width = this.originalWidth/20;
+        this.height = this.originalHeight/20;
         this.weight = 1;
+        this.frameX = 0;
     }
     update (){
         let curve = Math.sin(angle) * 20;
@@ -25,10 +31,13 @@ class Bird{
     }
     draw(){
         ctx.fillStyle = 'red';
-        ctx.fillRect (this.x, this.y, this.width, this.height);
+        //ctx.fillRect (this.x, this.y, this.width, this.height);
+        ctx.drawImage(CharacterBird, this.frameX * this.originalWidth, 0, this.originalWidth, this.originalHeight, this.x -13, this.y -8, this.width * 1.7, this.height * 1.7);
     }
     flap(){
         this.vy -= 2;
+        if (this.frameX >= 3) this.frameX = 0;
+        else if(frame % 6 === 0) this.frameX++;
     }
 }
 const bird = new Bird();
